@@ -1,9 +1,9 @@
 package vitals;
 
 public class Main {
-    
+    public static EVBMSTest evBMSTest;
     public static void main(String[] args) {
-        EVBMSTest.EVBMStest();
+        evBMSTest.EVBMStest();
         System.out.println("Some more tests needed");
     }
 }
