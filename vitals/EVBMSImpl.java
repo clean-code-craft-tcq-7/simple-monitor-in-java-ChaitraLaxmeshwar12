@@ -12,12 +12,12 @@ public class EVBMSImpl
   
   public static boolean isBattTemperatureinLimits(float temperature)
   {
-    return (isBatteryParameterWithinLimits(temperature,EVBMSConstants.minTemperature,EVBMSConstants.maxTemperature)
+    return (isBatteryParameterWithinLimits(temperature,EVBMSConstants.minTemperature,EVBMSConstants.maxTemperature));
   }
   
    public static boolean isBattSOCinLimits(float soc)
   {
-    return (isBatteryParameterWithinLimits(soc,EVBMSConstants.minSoc,EVBMSConstants.maxSoc)
+    return (isBatteryParameterWithinLimits(soc,EVBMSConstants.minSoc,EVBMSConstants.maxSoc));
   }
          
   public static boolean isChargeRateinLimit(float chargeRate)
