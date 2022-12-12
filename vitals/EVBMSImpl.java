@@ -5,9 +5,11 @@ public class EVBMSImpl
   
   public static boolean isBatteryParameterWithinLimits(float value,float lowerLimit, float upperLimit)
   {
+    boolean result = true;
     if(value >= lowerLimit && value <= upperLimit) {
-            return false;
+            result=false;
         }
+    return result;
   }
   
   public static boolean isBattTemperatureinLimits(float temperature)
@@ -22,8 +24,7 @@ public class EVBMSImpl
          
   public static boolean isChargeRateinLimit(float chargeRate)
    {
-      if(chargeRate >= EVBMSConstants.maxChargeRate)
-        return false;
+      return (chargeRate >= EVBMSConstants.maxChargeRate);
    }
             
    public static boolean batteryIsOk(float temperature, float soc, float chargeRate) {
