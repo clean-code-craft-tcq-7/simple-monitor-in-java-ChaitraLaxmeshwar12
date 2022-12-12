@@ -1,5 +1,5 @@
 package vitals;
-import vitals.EVBMSImpl.java;
+import vitals.EVBMSImpl;
 
 public class EVBMSTest
 {
