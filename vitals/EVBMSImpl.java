@@ -6,6 +6,9 @@ public class EVBMSImpl
   public boolean isBatteryParameterWithinLimits(float value,float lowerLimit, float upperLimit)
   {
     boolean result = true;
+    System.out.println("value->"+value);
+    System.out.println("lowerLimit->"+lowerLimit);
+    System.out.println("upperLimit->"+upperLimit);
     if(value >= lowerLimit && value <= upperLimit) {
             result=false;
         }
