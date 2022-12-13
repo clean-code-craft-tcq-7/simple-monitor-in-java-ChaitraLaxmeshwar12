@@ -9,6 +9,7 @@ public class EVBMSImpl
     if(value >= lowerLimit && value <= upperLimit) {
             result=false;
         }
+    System.out.println("result->"+result);
     return result;
   }
   
@@ -28,6 +29,9 @@ public class EVBMSImpl
    }
             
    public boolean batteryIsOk(float temperature, float soc, float chargeRate) {
+     System.out.println("temp->"+isBattTemperatureinLimits(temperature));
+     System.out.println("soc->"+isBattSOCinLimits(soc));
+     System.out.println("charge->"+isChargeRateinLimit(chargeRate));
      return (isBattTemperatureinLimits(temperature) && isBattSOCinLimits(soc) && isChargeRateinLimit(chargeRate));
    }
             
