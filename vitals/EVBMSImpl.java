@@ -30,7 +30,7 @@ public class EVBMSImpl
    {
        System.out.println("chargeRate->"+chargeRate);
        System.out.println(" max chargeRate->"+EVBMSConstants.maxChargeRate);
-      return (chargeRate >= EVBMSConstants.maxChargeRate);
+      return (chargeRate <= EVBMSConstants.maxChargeRate);
    }
             
    public boolean batteryIsOk(float temperature, float soc, float chargeRate) {
